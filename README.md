@@ -5,17 +5,17 @@ Vamos iniciar criando a pasta `public` que conterá a nossa tela e a pasta `src/
 
 Vou começar instalando algumas dependências de desenvolvimento para facilitar minha vida com o `yarn`já instalado na máquina.
 
-São elas:
-    - yarn add -D @babel/cli
-    - yarn add -D @babel/core
-    - yarn add -D @babel/plugin-proposal-object-rest-spread
-    - yarn add -D @babel/plugin-transform-async-to-generator
-    - yarn add -D @babel/polyfill
-    - yarn add -D @babel/preset-env
-    - yarn add -D babel-loader
-    - yarn add -D webpack
-    - yarn add -D webpack-cli
-    - yarn add -D webpack-dev-server
+São elas:<br />
+    - yarn add -D @babel/cli<br />
+    - yarn add -D @babel/core<br />
+    - yarn add -D @babel/plugin-proposal-object-rest-spread<br />
+    - yarn add -D @babel/plugin-transform-async-to-generator<br />
+    - yarn add -D @babel/polyfill<br />
+    - yarn add -D @babel/preset-env<br />
+    - yarn add -D babel-loader<br />
+    - yarn add -D webpack<br />
+    - yarn add -D webpack-cli<br />
+    - yarn add -D webpack-dev-server<br />
 
 Agora, vamos adicionar o `yarn add axios` para incluir o axios no nosso projeto e trabalhar com as APIs `https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=SEU_TOKEN` e `https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=SEU_TOKEN`.
 
