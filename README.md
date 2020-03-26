@@ -1,4 +1,4 @@
-# codenation-reactjs
+# codenation-es6
 Desenvolvendo o desafio de ReactJS proposta pela CodeNation
 
 Vamos iniciar criando a pasta `public` que conterá a nossa tela e a pasta `src/services` que é onde vai ficar a `API`.

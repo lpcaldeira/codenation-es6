@@ -1,4 +1,4 @@
-# codenation-reactjs
+# codenation-es6
 Desenvolvendo o desafio de ReactJS proposta pela CodeNation
 
 Criptografia de Júlio César
