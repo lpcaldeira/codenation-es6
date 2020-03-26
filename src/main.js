@@ -12,7 +12,7 @@ class App {
         this.allJobs()
     }
 
-    setLoading(loading = true) {
+    setLoading = (loading = true) => {
         if (loading == true) {
             let loadingEl = document.createElement('span')
             loadingEl.appendChild(document.createTextNode('...'))
@@ -23,14 +23,14 @@ class App {
         else document.getElementById('loading').remove()
     }
 
-    async allJobs() {
+    allJobs = async () => {
         await this.getApiResponse()
         await this.decryptApiResponse()
         await this.sha1ApiResponse()
         await this.sendFileToApi()
     }
 
-    async getApiResponse() {
+    getApiResponse = async () => {
         this.setLoading()
 
         try {
@@ -47,7 +47,7 @@ class App {
         this.render()
     }
 
-    async decryptApiResponse() {
+    decryptApiResponse = async () => {
         this.setLoading()
 
         const double_alphabet = [...this.alphabet, ...this.alphabet]
@@ -72,7 +72,7 @@ class App {
         this.render()
     }
 
-    async sha1ApiResponse() {
+    sha1ApiResponse = async () => {
         this.setLoading()
 
         const { decifrado } = this.api_info
@@ -84,7 +84,7 @@ class App {
         this.render()
     }
 
-    async createFileAnswerJSON() {
+    createFileAnswerJSON = async () => {
         this.setLoading()
 
         this.steps.push('Arquivo de resposta criado com sucesso!')
@@ -93,7 +93,7 @@ class App {
         this.render()
     }
 
-    async sendFileToApi() {
+    sendFileToApi = async () => {
         this.setLoading()
 
         const blob = new Blob([JSON.stringify(this.api_info)], { type: 'application/json' })

@@ -17,6 +17,10 @@ São elas:<br />
     - yarn add -D webpack-cli<br />
     - yarn add -D webpack-dev-server<br />
 
+A última do babel será para usar **`Arrow Functions`**: **`yarn add babel-plugin-transform-class-properties`**.
+
+Depois de instalada, basta adicionar no **`.babelrc`** o plugin **`["transform-class-properties"]`**.
+
 Agora, vamos adicionar o **`yarn add axios`** para incluir o axios no nosso projeto e trabalhar com as APIs **`https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=SEU_TOKEN`** e **`https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=SEU_TOKEN`**.
 
 Assim, vou incluir um arquivo chamado **`index.html`** dentro da **`public`**.
