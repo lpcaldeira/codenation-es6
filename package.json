@@ -1,6 +1,6 @@
 {
-  "name": "codenation-reactjs",
-  "description": "Desenvolvendo o desafio de ReactJS proposta pela CodeNation",
+  "name": "codenation-es6",
+  "description": "1 de 15 ideias de app para construir e melhorar suas habilidades.",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lpcaldeira/codenation-reactjs.git"
+    "url": "git+https://github.com/lpcaldeira/codenation-es6.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lpcaldeira/codenation-reactjs/issues"
+    "url": "https://github.com/lpcaldeira/codenation-es6/issues"
   },
-  "homepage": "https://github.com/lpcaldeira/codenation-reactjs#readme",
+  "homepage": "https://github.com/lpcaldeira/codenation-es6#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
