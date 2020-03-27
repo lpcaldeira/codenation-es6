@@ -1,6 +1,6 @@
 {
   "name": "codenation-es6",
-  "description": "1 de 15 ideias de app para construir e melhorar suas habilidades.",
+  "description": "Desenvolvendo o desafio de ReactJS proposta pela CodeNation.",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
