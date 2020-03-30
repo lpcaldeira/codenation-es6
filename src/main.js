@@ -1,12 +1,11 @@
 import sha1 from 'crypto-js/sha1'
 import api from './services/api'
-const account_token = '182268c3820318fb74b91d917c5964b1f6e50447'
+import account_token from './services/token' // criado apenas para não exibir o token em vídeo
 
 class App {
     constructor() {
         this.steps = []
         this.api_info = {}
-        // this.alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
         this.alphabet = [...'abcdefghijklmnopqrstuvwxyz']
         this.stepsEl = document.getElementById('steps')
         this.allJobs()
@@ -111,6 +110,7 @@ class App {
 
         try {
             const response = await api.post(`/submit-solution?token=${account_token}`, formdata, options)
+            console.log(response.data)
             this.steps.push('Dados enviados à API com sucesso!')
         }
         catch (err) {
