@@ -58,14 +58,13 @@ class App {
         else {
             const words = cifrado.split('')
             await words.forEach(word => {
-                const i_alphabet = double_alphabet.findIndex(x => x == word)
+                const i_alphabet = double_alphabet.lastIndexOf(word)
                 if (i_alphabet == -1) decifrado += word
                 else decifrado += double_alphabet[i_alphabet - numero_casas]
             })
             this.steps.push('Mensagem decifrada com sucesso!')
+            this.api_info.decifrado = decifrado
         }
-
-        this.api_info.decifrado = decifrado
 
         this.setLoading(false)
         this.render()
@@ -78,15 +77,6 @@ class App {
         this.api_info.resumo_criptografico = await sha1(decifrado).toString()
 
         this.steps.push('Mensagem criptografada com sha1 com sucesso!')
-
-        this.setLoading(false)
-        this.render()
-    }
-
-    createFileAnswerJSON = async () => {
-        this.setLoading()
-
-        this.steps.push('Arquivo de resposta criado com sucesso!')
 
         this.setLoading(false)
         this.render()
